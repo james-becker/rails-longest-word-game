@@ -1,0 +1,14 @@
+<h1>LongestWord#game</h1>
+
+<h2>Here is your grid:</h2>
+<h1><%= @grid.split('') %></h1>
+
+<br>
+
+<form action="/score">
+  <label for="question">Enter your longest word:</label>
+  <input type="text" id="attempt" name="attempt" placeholder="My word">
+  <input type="hidden" id="grid" name="grid" value="<%= @grid %>">
+  <input type="hidden" id="start_time" name="start_time" value="<%= @start_time %>">
+  <input type="submit" value="Go on!">
+</form>
